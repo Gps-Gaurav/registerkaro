@@ -1,38 +1,36 @@
-// src/components/Layout/Topbar.js
-import { useState, useEffect } from 'react';
+import React from 'react';
+import { FaFacebook, FaTwitter, FaInstagram, FaPinterest } from 'react-icons/fa';
 
-const Topbar = () => {
-  const [currentDateTime, setCurrentDateTime] = useState('');
-  const currentUser = {
-    login: 'gps-rajput',
-    lastLogin: '2025-01-04 18:20:00'
-  };
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      const now = new Date();
-      setCurrentDateTime(now.toISOString().slice(0, 19).replace('T', ' '));
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
-
+const Header = () => {
   return (
-    <div className="bg-gray-100 border-b border-gray-200">
-      <div className="container mx-auto px-4">
-        <div className="flex flex-col sm:flex-row justify-between items-center py-2 text-sm text-gray-600">
-          <div className="mb-2 sm:mb-0">
-            <span className="font-medium">Current Date and Time (UTC):</span>{' '}
-            {currentDateTime}
-          </div>
-          <div className="flex items-center gap-4">
-            <span className="font-medium">Current User s Login:</span>{' '}
-            {currentUser.login}
-          </div>
-        </div>
+    <div style={{ backgroundColor: '#003366', color: '#ffffff', padding: '10px 20px', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+        <span>📧</span>
+        <a href="mailto:www.registerkaro.in" style={{ color: '#ffffff', textDecoration: 'none' }}>
+          www.registerkaro.in
+        </a>
+        <span>|</span>
+        <span>📞</span>
+        <a href="tel:+918447746183" style={{ color: '#ffffff', textDecoration: 'none' }}>
+          +918447746183
+        </a>
+      </div>
+      <div style={{ display: 'flex', gap: '15px' }}>
+        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff' }}>
+          <FaFacebook />
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff' }}>
+          <FaTwitter />
+        </a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff' }}>
+          <FaInstagram />
+        </a>
+        <a href="https://www.pinterest.com" target="_blank" rel="noopener noreferrer" style={{ color: '#ffffff' }}>
+          <FaPinterest />
+        </a>
       </div>
     </div>
   );
 };
 
-export default Topbar;
+export default Header;

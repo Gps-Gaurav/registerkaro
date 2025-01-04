@@ -14,23 +14,25 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
 
 h1 {
   text-align: center;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 ul {
   list-style-type: none;
   padding: 0;
@@ -49,13 +51,14 @@ li:hover {
 
 @media (min-width: 600px) {
   .container {
-      flex-direction: row;
-      justify-content: space-around;
-      width: 80%;
-      margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
   }
 
-  .company-list, .company-details {
-      width: 45%;
+  .company-list,
+  .company-details {
+    width: 45%;
   }
 }

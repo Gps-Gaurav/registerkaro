@@ -1,26 +1,30 @@
-// src/pages/index.js
-import { HeaderDateTime } from '../components/home/sections/HeaderSection';
-import { ServicesSection } from '../components/home/sections/ServicesSection';
-import { AboutSection } from '../components/home/sections/AboutSection';
-import { FeaturesSection } from '../components/home/sections/FeaturesSection';
-import { VideoSection } from '../components/home/sections/VideoSection';
-import { TestimonialsSection } from '../components/home/sections/TestimonialsSection';
-import { FAQSection } from '../components/home/sections/FAQSection';
-import { SubscribeSection } from '../components/home/sections/SubscribeSection';
-import { StatsSection } from '../components/home/sections/StatsSection';
+// src/app/page.jsx
+import HeroSection from '@/components/sections/HeroSection';
+import ExploreServices from '@/components/sections/ExploreServices';
+import AboutSection from '@/components/sections/AboutSection';
+import WhyChooseUs from '@/components/sections/WhyChooseUs';
+import VideoInstructions from '@/components/sections/VideoInstructions';
+import HappyClients from '@/components/sections/HappyClients';
+import BlogSection from '@/components/sections/BlogSection';
+import TestimonialsCarousel from '@/components/sections/Testimonials';
+import Faqs from '@/components/sections/FAQ';
+import MobileAppBanner from '@/components/sections/MobileAppBanner';
+import StatsBanner from '@/components/sections/StatsBanner';
 
 export default function Home() {
   return (
-    <div>
-      <HeaderDateTime />
-      <ServicesSection />
+    <main className="w-full">
+      <HeroSection />
+      <ExploreServices />
       <AboutSection />
-      <FeaturesSection />
-      <VideoSection />
-      <TestimonialsSection />
-      <FAQSection />
-      <StatsSection />
-      <SubscribeSection />
-    </div>
+      <WhyChooseUs />
+      <VideoInstructions />
+      <HappyClients />
+      <BlogSection />
+      <TestimonialsCarousel />
+      <Faqs />
+      <MobileAppBanner />
+      <StatsBanner />
+    </main>
   );
 }
