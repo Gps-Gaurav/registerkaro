@@ -3,9 +3,9 @@ import pg from 'pg';
 const { Pool } = pg;
 
 const pool = new Pool({
-  user: 'gps-rajput',
+  user: 'username',
   host: 'localhost',
-  database: 'registerkaro',
+  database: 'db name',
   password: 'enter db password',
   port: 5432,
 });
