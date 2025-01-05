@@ -14,31 +14,33 @@ const AboutSection = () => {
           </h2>
           <p className="text-gray-600 leading-relaxed mb-4">
             We have been using Intelegencia as our DevOps vendor for our field
-            service applications over the last couple of years, and I’m
+            service applications over the last couple of years, and I'm
             extremely pleased with their performance, ability to execute, and
             willingness to adapt in our ever-changing environment. Perry is an
             outstanding leader who is fanatical about customer satisfaction. He
             has built a solid team which has consistently delivered on projects
-            thereby exceeding everyone’s expectations.
+            thereby exceeding everyone's expectations.
           </p>
           <p className="text-gray-600 leading-relaxed mb-6">
             I would strongly recommend their services to any organization that
             is looking for solid, reliable, and predictable outcomes.
           </p>
-          <button className="bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700">
-            Learn More →
+          <button className="bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300 ease-in-out flex items-center gap-2">
+            Learn More <span className="transform hover:translate-x-1 transition-transform">→</span>
           </button>
         </div>
 
         {/* Image Content */}
         <div className="lg:w-1/2 px-6 mt-8 lg:mt-0 relative">
-          <div className="rounded-lg overflow-hidden shadow-lg border-4 border-orange-500">
+          <div className="rounded-lg overflow-hidden shadow-lg border-4 border-orange-500 transition-transform duration-300 hover:scale-105">
             <Image
-              src="/public/About.png"
+              src="/About.png"
               alt="Register Karo Team"
               width={600}
               height={400}
-              className="object-cover"
+              className="object-cover w-full h-full"
+              priority
+              quality={100}
             />
           </div>
         </div>

@@ -53,11 +53,13 @@ const VideoSection = () => {
           {/* Video Section */}
           <div className="lg:w-1/2 mt-8 lg:mt-0 flex justify-center">
             <div className="relative">
-              <img
-                src="/video-placeholder.jpg"
-                alt="Video introduction"
-                className="rounded-lg shadow-lg w-full h-auto"
-              />
+              <div className="rounded-lg border-4 border-gray-700 overflow-hidden shadow-lg">
+                <img
+                  src="/video-placeholder.jpg"
+                  alt="Video introduction"
+                  className="w-full h-auto"
+                />
+              </div>
               <div className="absolute inset-0 flex items-center justify-center">
                 <button className="w-16 h-16 bg-red-600 rounded-full flex items-center justify-center">
                   <svg

@@ -33,6 +33,7 @@ body {
 h1 {
   text-align: center;
 }
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -41,12 +42,14 @@ ul {
 li {
   cursor: pointer;
   padding: 10px;
-  border: 1px solid #ddd;
   margin: 5px 0;
+  transition: all 0.3s ease;
+  /* Removed border */
 }
 
 li:hover {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.1); /* Subtle hover effect */
+  transform: translateX(5px); /* Slight movement on hover */
 }
 
 @media (min-width: 600px) {
@@ -61,4 +64,30 @@ li:hover {
   .company-details {
     width: 45%;
   }
+}
+
+/* Additional modern styling */
+.company-list {
+  background: transparent;
+}
+
+.company-details {
+  background: transparent;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Remove focus outlines but keep accessibility */
+:focus {
+  outline: none;
+}
+
+:focus-visible {
+  outline: 2px solid #4f46e5;
+  outline-offset: 2px;
 }
