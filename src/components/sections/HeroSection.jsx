@@ -5,7 +5,7 @@ const HeroSection = () => {
     <div className="bg-gradient-to-r from-orange-100 to-blue-100 min-h-[70vh] flex items-center justify-center py-6 -mt-8">
       <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-8 items-center px-0">
         <div className="space-y-4 lg:pr-4">
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-2 mt-2 py-2">
             <span className="text-yellow-500 text-xl font-bold">★</span>
             <p className="text-lg font-medium">Google Rating</p>
             <p className="text-lg font-bold">★★★★★</p>
