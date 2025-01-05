@@ -6,7 +6,7 @@ const pool = new Pool({
   user: 'gps-rajput',
   host: 'localhost',
   database: 'registerkaro',
-  password: '123456',
+  password: 'enter db password',
   port: 5432,
 });
 
