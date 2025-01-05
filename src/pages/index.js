@@ -15,11 +15,14 @@ import ApplicationProcess from '@/components/sections/ApplicationProcess';
 import SubscribeSection from '@/components/sections/SubscribeSection';
 import Companies from '@/components/sections/Companies';
 import CustomerSatisfaction from '@/components/sections/CustomerSatisfaction';
+import CompanyDetails from '@/components/company/CompanyDetails';
+
 export default function Home() {
   return (
     <main className="w-full">
       <HeroSection />
       <TrustedBySection/>
+      <CompanyDetails />
       <ExploreServices />
       <AboutSection />
       <WhyChooseUs />
