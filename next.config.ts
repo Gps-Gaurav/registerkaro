@@ -2,8 +2,14 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   experimental: {
-    esmExternals: true // Enable ES modules
+    esmExternals: true 
   },
+  reactStrictMode: true,
+  swcMinify: true,
+  images: {
+    domains: ['via.placeholder.com'],
+    unoptimized: true
+  }
 };
 
 export default nextConfig;
