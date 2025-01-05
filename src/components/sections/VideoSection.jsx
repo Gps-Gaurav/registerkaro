@@ -55,7 +55,7 @@ const VideoSection = () => {
             <div className="relative">
               <div className="rounded-lg border-4 border-gray-700 overflow-hidden shadow-lg">
                 <img
-                  src="/video-placeholder.jpg"
+                  src="/logos/overly.png"
                   alt="Video introduction"
                   className="w-full h-auto"
                 />

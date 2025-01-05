@@ -6,42 +6,42 @@ const Companies = () => {
       <div className="flex justify-between items-center space-x-10">
         {/* Coinbase */}
         <Image
-          src="/logos/coinbase.svg" // Replace with the actual path to the logo
+          src="/logos/Vector (2).png" // Replace with the actual path to the logo
           alt="Coinbase Logo"
           width={120}
           height={40}
         />
         {/* Spotify */}
         <Image
-          src="/logos/spotify.svg" // Replace with the actual path to the logo
+          src="/logos/Vector (3).png" // Replace with the actual path to the logo
           alt="Spotify Logo"
           width={120}
           height={40}
         />
         {/* Slack */}
         <Image
-          src="/logos/slack.svg" // Replace with the actual path to the logo
+          src="/logos/Vector (4).png" // Replace with the actual path to the logo
           alt="Slack Logo"
           width={120}
           height={40}
         />
         {/* Dropbox */}
         <Image
-          src="/logos/dropbox.svg" // Replace with the actual path to the logo
+          src="/logos/Vector (5).png" // Replace with the actual path to the logo
           alt="Dropbox Logo"
           width={120}
           height={40}
         />
         {/* Webflow */}
         <Image
-          src="/logos/webflow.svg" // Replace with the actual path to the logo
+          src="/logos/Vector (6).png" // Replace with the actual path to the logo
           alt="Webflow Logo"
           width={120}
           height={40}
         />
         {/* Zoom */}
         <Image
-          src="/logos/zoom.svg" // Replace with the actual path to the logo
+          src="/logos/Company logo.png" // Replace with the actual path to the logo
           alt="Zoom Logo"
           width={120}
           height={40}

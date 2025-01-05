@@ -9,35 +9,42 @@ const TrustedBySection = () => {
         </h2>
         <div className="flex flex-wrap justify-center items-center mt-6 gap-8">
           <Image
-            src="/logos/oracle-logo.png"
+            src="/logos/Group.png"
             alt="Oracle Logo"
             width={100}
             height={50}
             className="object-contain"
           />
           <Image
-            src="/logos/morpheus-logo.png"
+            src="/logos/Vector.png"
             alt="Morpheus Logo"
             width={100}
             height={50}
             className="object-contain"
           />
           <Image
-            src="/logos/samsung-logo.png"
+            src="/logos/Vector.png"
+            alt="Morpheus Logo"
+            width={100}
+            height={50}
+            className="object-contain"
+          />
+          <Image
+            src="/logos/Vector (1).png"
             alt="Samsung Logo"
             width={100}
             height={50}
             className="object-contain"
           />
           <Image
-            src="/logos/monday-logo.png"
+            src="/logos/Group (1).png"
             alt="Monday.com Logo"
             width={100}
             height={50}
             className="object-contain"
           />
           <Image
-            src="/logos/segment-logo.png"
+            src="/logos/Group (2).png"
             alt="Segment Logo"
             width={100}
             height={50}

@@ -42,7 +42,7 @@ const CustomerSatisfaction = () => {
     return (
         <section className="bg-gray-100 py-12">
             <div className="container mx-auto px-6 lg:px-12">
-                {/* Heading */}
+
                 <div className="text-center mb-10">
                     <h2 className="text-2xl font-bold text-orange-500 mb-2">
                         87.6% Customer Satisfaction
@@ -52,25 +52,25 @@ const CustomerSatisfaction = () => {
                     </h3>
                 </div>
 
-                {/* Carousel */}
+
                 <Slider {...settings} className="max-w-4xl mx-auto testimonial-slider">
                     {testimonials.map((testimonial, index) => (
                         <div key={index} className="px-4">
-                            {/* Testimonial Card */}
+
                             <div className="bg-white rounded-lg shadow-lg p-8">
-                                {/* Quote */}
+
                                 <blockquote className="text-gray-700 text-lg italic mb-8">
                                     <span className="text-blue-600 text-2xl font-bold">"</span>
                                     {testimonial.quote}
                                     <span className="text-blue-600 text-2xl font-bold">"</span>
                                 </blockquote>
 
-                                {/* Bottom Section */}
+
                                 <div className="flex justify-between items-center">
-                                    {/* Author Info */}
+
                                     <div className="flex items-center">
                                         <img
-                                            src={testimonial.avatar}
+                                            src="/logos/div.lazyloaded (1).png"
                                             alt={testimonial.author}
                                             className="w-16 h-16 rounded-full border-2 border-gray-300"
                                         />
@@ -84,7 +84,7 @@ const CustomerSatisfaction = () => {
                                     <div className="flex items-center space-x-6">
                                         <div className="flex items-center">
                                             <img
-                                                src="/google-logo.png"
+                                                src="/logos/Vector (7).png"
                                                 alt=""
                                                 className="w-8 h-8"
                                             />
@@ -114,7 +114,7 @@ const CustomerSatisfaction = () => {
                 </Slider>
             </div>
 
-            {/* Custom CSS for carousel */}
+
             <style jsx global>{`
                 .testimonial-slider .slick-dots li button:before {
                     color: #f97316;

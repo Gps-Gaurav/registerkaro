@@ -1,17 +1,21 @@
 const HappyClients = () => {
   const clientLogos = [
-    "/logos/logo1.png", // Replace with your image paths
-    "/logos/logo2.png",
-    "/logos/logo3.png",
-    "/logos/logo4.png",
-    "/logos/logo5.png",
-    "/logos/logo6.png",
-    "/logos/logo7.png",
-    "/logos/logo8.png",
-    "/logos/logo9.png",
-    "/logos/logo10.png",
-    "/logos/logo11.png",
-    "/logos/logo12.png",
+    "/logos/Display Round Logo (1).png",
+    "/logos/Display Round Logo (2).png",
+    "/logos/Display Round Logo (3).png",
+    "/logos/Display Round Logo (4).png",
+    "/logos/Display Round Logo (5).png",
+    "/logos/Display Round Logo (6).png",
+    "/logos/Display Round Logo (7).png",
+    "/logos/Display Round Logo (8).png",
+    "/logos/Display Round Logo (9).png",
+    "/logos/Display Round Logo (10).png",
+    "/logos/Display Round Logo (11).png",
+    "/logos/Logo Glyphs (1).png",
+    "/logos/Logo Glyphs (2).png",
+    "/logos/Logo Glyphs (3).png",
+    "/logos/Logo Glyphs (4).png",
+
   ];
 
   return (

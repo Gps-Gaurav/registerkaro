@@ -13,7 +13,7 @@ const TestimonialsCarousel = () => {
       name: "Chris",
       role: "President and CEO, PrintReach, USA",
       rating: 4.5,
-      image: "https://via.placeholder.com/50",
+      image: "/logos/div.lazyloaded.png",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const TestimonialsCarousel = () => {
       name: "Chris",
       role: "President and CEO, PrintReach, USA",
       rating: 5,
-      image: "https://via.placeholder.com/50",
+      image: "/logos/div.lazyloaded.png",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ const TestimonialsCarousel = () => {
       name: "Chris",
       role: "President and CEO, PrintReach, USA",
       rating: 5,
-      image: "https://via.placeholder.com/50",
+      image: "/logos/div.lazyloaded.png",
     },
   ];
 
@@ -37,7 +37,7 @@ const TestimonialsCarousel = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Changed to show 3 slides
+    slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
     autoplay: true,
@@ -68,10 +68,10 @@ const TestimonialsCarousel = () => {
       <div className="container mx-auto px-4">
         <Slider {...settings}>
           {testimonials.map((testimonial) => (
-            <div key={testimonial.id} className="px-2"> {/* Added padding for spacing between slides */}
+            <div key={testimonial.id} className="px-2">
               <div className="bg-white rounded-lg p-6 shadow-lg text-center h-full">
                 <div className="text-blue-900 text-4xl mb-4">"</div>
-                <p className="text-gray-600 text-sm mb-4 line-clamp-4"> {/* Added line clamping */}
+                <p className="text-gray-600 text-sm mb-4 line-clamp-4">
                   {testimonial.text}
                 </p>
                 <div className="flex justify-center my-3">

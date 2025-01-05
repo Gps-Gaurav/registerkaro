@@ -2,7 +2,7 @@ import React from 'react';
 
 const SubscribeSection = () => {
   return (
-    <div className="bg-gradient-to-r from-orange-500 to-blue-800 text-white py-16 px-6">
+    <div id='contact' className="bg-gradient-to-r from-orange-500 to-blue-800 text-white py-16 px-6">
       <div className="max-w-4xl mx-auto text-center">
         {/* Subheading */}
         <p className="text-sm font-medium mb-2">1% OF THE INDUSTRY</p>
