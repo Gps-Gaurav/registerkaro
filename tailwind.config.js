@@ -6,7 +6,14 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      gradients: {
+        'blue': {
+          900: '#1e3a8a',
+          950: '#172554',
+        },
+      },
+    },
   },
   plugins: [],
 };
