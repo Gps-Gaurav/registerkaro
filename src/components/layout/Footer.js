@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaFacebookF, FaGoogle, FaApple, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
+import { FaFacebookF, FaGoogle, FaInstagram,FaLinkedinIn,FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -36,24 +36,18 @@ const Footer = () => {
   return (
     <footer className="bg-gradient-to-b from-blue-900 to-blue-950 text-white py-12 relative">
       <div className="container mx-auto px-4 lg:px-8">
-        {/* Main Footer Content */}
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
-          {/* Company Info Section */}
           <div className="lg:col-span-2 space-y-6">
-            {/* Logo */}
             <div className="mb-6">
               <h1 className="text-2xl font-bold">
                 Register<span className="text-orange-500">Karo</span>
               </h1>
             </div>
 
-            {/* Company Description */}
             <p className="text-gray-300 text-sm md:text-base leading-relaxed max-w-md">
               Design outstanding interfaces with advanced Figma features in a
               matter of minutes. We provide comprehensive business solutions and registrations.
             </p>
-
-            {/* Social Links */}
             <div className="flex space-x-4">
               {socialLinks.map((social, index) => (
                 <a
@@ -68,8 +62,6 @@ const Footer = () => {
               ))}
             </div>
           </div>
-
-          {/* Links Sections */}
           <div className="col-span-3 grid grid-cols-2 md:grid-cols-4 gap-8">
             {footerLinks.map((section, index) => (
               <div key={index} className="space-y-4">
@@ -95,10 +87,8 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
         <div className="border-t border-blue-800 my-8"></div>
 
-        {/* Bottom Section */}
         <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
           <p className="text-gray-400 text-sm">
             © {new Date().getFullYear()} RegisterKaro. All Rights Reserved.
@@ -111,7 +101,6 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
       <button
         onClick={scrollToTop}
         className="fixed bottom-8 right-8 w-12 h-12 bg-orange-500 hover:bg-orange-600 text-white rounded-full flex items-center justify-center shadow-lg transition-all duration-300 hover:transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2"
